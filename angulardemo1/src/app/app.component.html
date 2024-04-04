@@ -1,0 +1,96 @@
+
+<!-- Number1: <input type="number" #no1> <br/>
+Number2: <input type="number" #no2> <br/>
+<button (click)="add(no1.value,no2.value)">Add</button>
+<button (click)="sub(no1.value,no2.value)">sub</button> -->
+
+<!-- {{res}}; -->
+
+<h1 appDemo>App Component-ParentComponent</h1>
+<!-- {{result}}
+//<input type="text" #temp> -->
+<!-- <input type="text" #temp (keyup)="getValue(temp.value)">
+<!-- {{op}} -->
+<!-- <demo-comp [msg]="result" (testdata)="getData($event)"></demo-comp> -->
+<!-- <demo-comp [msg]="result" (testdata)="getsomething($event)"></demo-comp> -->
+
+
+<!-- <input type="text" #agein>
+
+<input type="button" (click)="isEligible(agein.value)">
+
+<div *ngIf="age>18"> Hello There!!! you are eligible to vote</div>
+
+<ul *ngFor="let temp of topics">
+    <li appDemo>{{temp | uppercase}}</li>
+
+</ul>
+
+<h1 appDemo>Hello from custome directive</h1>
+
+<h1> {{msg | lowercase}}</h1>
+<input type="number" #number >
+<button (click)="setPrice(number.value)">CHECK</button>
+<h1>{{price | currency:'INR'}}</h1>
+<h1 *ngIf="price>0">{{price | evenodd}}</h1> --> -->
+
+<!-- <h1>{{show}}</h1>
+
+<demo-comp *ngIf="show">Child component</demo-comp>
+
+<input type="text" #message>
+<input type="button" (click)="setMessage(message.value)" value="CLICK">
+<demo-comp *ngIf="show">Child component</demo-comp> -->
+<!-- <demo-comp *ngIf="show" [msg]="childinput"></demo-comp>
+
+<button (click)="display()">Hide/Show Child</button> -->
+
+<!-- {{msg}}
+
+{{users}} -->
+
+
+    
+    <!-- <table *ngIf="users.length>0">
+        <tr>
+            <th>ID</th>
+            <th>USERNAME</th>
+            <th>EMAIL</th>
+            <th>ADDRESS</th>
+        </tr>
+        <tr *ngFor="let usr of users">
+            <th>{{usr.id}}</th>
+            <th>{{usr.username}}</th>
+            <th>{{usr.email}}</th>
+            <th>{{usr.address.city}}</th>
+        </tr>
+    </table>
+
+
+<input type="button" (click)="displayusers()"> -->
+
+
+<form #myform="ngForm" (submit)="getdetails(myform)">
+    username :<input type="text" name="usr" ngModel required> <br/>
+    Password: <input type="text" name="pwd" ngModel required> <br/>
+    Email: <input type="text" name="email" ngModel> <br/>
+    Contact: <input type="text" name="contact" ngModel> <br/>
+    <input type="submit">
+</form>
+
+
+<!-- <input type="text" #usr>{{msg}}
+<input type="button" (click)="setValue(usr.value)"> -->
+
+<!-- <input type="text" #usr [(ngModel)]="msg">{{msg}}
+
+<h1>{{msg}}</h1>
+<input type="button" (click)="changeValue()">  -->
+
+
+<!-- <form [formGroup]="signupform" (submit)="submitData()">
+    username :<input type="text" formControllerName="username"><br/>
+    Password :<input type="text" formControllerName="password"><br/>
+    Contact  :<input type="text" formControllerName="contact"><br/>
+    <input type="submit">
+</form> -->

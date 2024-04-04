@@ -1,0 +1,37 @@
+<script>
+    function validate(){
+        var username =document.getElementById('usr').value;
+        var password =document.getElementById('pwd').value;
+
+        if(username == null || username==''){
+            document.getElementById('usrerr').innerHTML='username not valid'
+            document.getElementById('usr').setAttribute('style',"border-color: red;");
+return false;
+        }else if(password == null || password == ''){
+            document.getElementById('pwderr').innerHTML='password not valid'
+            document.getElementById('pwd').setAttribute('style',"border-color: red;");
+return false;
+        }
+    } 
+</script>
+
+
+
+<center>
+    
+    <form action="submit.html" method="get" onsubmit="return validate()">
+        <h1>Form Demo</h1>
+        <p style="color: red;" id="usrerr"></p>
+        username : <input type="text" name="usrname" id="usr" onblur="validate()">
+        <br/><br/>
+        <p style="color: red;" id="pwderr"></p>
+        password : <input type="text" name="pwd" id="pwd" onblur="validate()">
+        <br/><br/>
+        email : <input type="text" name="email">
+        <br/><br/> 
+        Contact : <input type="text" name="cont">
+        <br/><br/> 
+        <input type="submit" >
+        <br/><br/>
+    </form>
+</center>

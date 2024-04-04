@@ -1,0 +1,36 @@
+<script>
+    
+    function add(no1,no2){
+        
+        var res=parseInt(no1)+parseInt(no2);
+        document.getElementById('res').innerHTML=res;
+    }
+    function sub(no1,no2){
+        
+        var res=no1-no2;
+        document.getElementById('res').innerHTML=res;
+    }
+    function mul(no1,no2){
+        
+        var res=no1*no2;
+        document.getElementById('res').innerHTML=res;
+    }
+    function div(no1,no2){
+      
+        var res=no1/no2;
+        document.getElementById('res').innerHTML=res;
+    }
+</script>
+
+<center>
+    <h1>Calculator App</h1>
+number1 :<input type=number id="no1"> </br></br>
+number2 :<input type=number id="no2"></br></br>
+<button onclick="add(no1.value,no2.value)">Add</button>
+<button onclick="sub(no1.value,no2.value)">Subtract</button>
+<button onclick="mul(no1.value,no2.value)">Multiply</button>
+<button onclick="div(no1.value,no2.value)">Division</button>
+
+
+<p>Result :<span id="res"></span></p>
+</center>

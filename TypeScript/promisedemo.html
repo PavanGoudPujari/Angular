@@ -1,0 +1,18 @@
+<script>
+    function random(){
+        console.log('Operation 2 -----');
+        console.log(Math.random()*10);
+    }
+
+    function delay(){
+        console.log('operation 1');
+        x.then(random());//promise started
+        
+    }
+
+    const x = new Promise((resolve) =>{
+       setInterval(()=>console.log('operation 3'),3000)
+    });
+</script>
+
+<input type="button" onclick="delay()">
